@@ -6,7 +6,9 @@ class Footer {
 
     start(){
         this.holder.insertAdjacentHTML('beforeend', `
+        <footer>
             <p>© Football app copyright Nick Janssen </p>
+        </footer>
         `)
     }
 }
