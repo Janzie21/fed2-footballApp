@@ -1,6 +1,7 @@
 import Header from './Header';
 import Footer from './Footer';
 import Form from './Form';
+import Teams from './Teams';
 
 const data = {
     teams : [],
@@ -8,5 +9,9 @@ const data = {
 };
 
 new Header(document.body, "Football App", " | The place to look up your favourite team ");
-new Form(document.body, data)
+new Form(document.body, data);
+const teams = new Teams(document.body, data)
+window.addEventListener('getTeams', teams.renderTeams);
+
+
 new Footer(document.body);
