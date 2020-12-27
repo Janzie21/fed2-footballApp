@@ -10,7 +10,7 @@ class Team {
             <div class="team">
 
             ${this.filmObject.strTeam}
-            <img src="https://www.thesportsdb.com/images/media/team/jersey/">${this.filmObject.strTeamJersey}</img>
+            <img src="https://www.thesportsdb.com/images/media/team/jersey/ + ${this.filmObject.strTeamJersey}</img>
             
 
             </div>

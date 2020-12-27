@@ -4,17 +4,21 @@
 body {
   background-color: #000;
   color: white;
+  
+
+  
 
   header, footer{
-    height: 100px;
-    background-color: rgb(7, 70, 10);
+    height: 15vh;
+    background-color: rgb(5, 36, 7);
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
 
   h1 {
-    color: $green;
+    color: white;
     transition: color 1s;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -33,7 +37,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    
+    height: 70vh;
+    background-image: url("https://footballwhispers.com/wp-content/uploads/2020/09/the-ball-488718_640.jpg");
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
 
     input {
       margin-top: 20px;
