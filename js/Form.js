@@ -9,7 +9,9 @@ class Form {
 
     start(){
         this.holder.insertAdjacentHTML('beforeend', `
+        
         <form action="">
+        <div class="search">
         <input
           type="text"
           name="searchString"
@@ -17,7 +19,9 @@ class Form {
           placeholder="Search for a specific team. eg: Chelsea"
         />
         <input id="submitBtn" type="submit" value="search" />
-      </form>`
+        </div>
+      </form>
+      `
         );
         return this.holder.querySelector('form')
     }

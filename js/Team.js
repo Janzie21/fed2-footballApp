@@ -1,7 +1,7 @@
 class Team {
-    constructor(holder,filmObject){
+    constructor(holder,teamObject){
         this.holder = holder;
-        this.filmObject = filmObject;
+        this.teamObject = teamObject;
         this.start();
     }
 
@@ -9,10 +9,9 @@ class Team {
         this.holder.insertAdjacentHTML('beforeend', `
             <div class="team">
 
-            ${this.filmObject.strTeam}
-            <img src="https://www.thesportsdb.com/images/media/team/jersey/ + ${this.filmObject.strTeamJersey}</img>
+            <img src="${this.teamObject.strTeamBadge}"></img>
+            <p>${this.teamObject.strTeam}</p>
             
-
             </div>
         `)
     }
