@@ -11,6 +11,7 @@ class Team {
 
             <img src="${this.teamObject.strTeamBadge}"></img>
             <p>${this.teamObject.strTeam}</p>
+            <p>${this.teamObject.strStadium}</p>
             
             </div>
         `)
