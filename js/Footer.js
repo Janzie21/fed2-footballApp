@@ -13,4 +13,5 @@ class Footer {
     }
 }
 
-export default Footer;
+export default (holder) =>
+    new Footer(holder);

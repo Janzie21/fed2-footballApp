@@ -18,4 +18,5 @@ class Team {
     }
 }
 
-export default Team;
+export default (holder,teamObject) =>
+    new Team(holder,teamObject);

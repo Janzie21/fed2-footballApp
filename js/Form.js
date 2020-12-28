@@ -46,4 +46,5 @@ class Form {
 
 }
 
-export default Form;
+export default (holder, data) => 
+    new Form(holder, data);

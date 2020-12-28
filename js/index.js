@@ -1,18 +1,17 @@
-import Header from './Header';
-import Footer from './Footer';
-import Form from './Form';
-import Teams from './Teams';
+import header from './Header';
+import footer from './Footer';
+import form from './Form';
+import teams from './Teams';
 
 const data = {
     teams : [],
     teamDetail : {}
 };
 
+header(document.body, "Football App", " | The place to look up your favourite team ");
+form(document.body, data);
+const teamsdata = teams(document.querySelector("form"), data)
+window.addEventListener('getTeams', teamsdata.renderTeams);
 
-new Header(document.body, "Football App", " | The place to look up your favourite team ");
-new Form(document.body, data);
-const teams = new Teams(document.querySelector("form"), data)
-window.addEventListener('getTeams', teams.renderTeams);
 
-
-new Footer(document.body);
+footer(document.body);

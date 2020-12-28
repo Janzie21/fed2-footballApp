@@ -32,4 +32,5 @@ class Teams {
     }
 }
 
-export default Teams
+export default (holder, data) =>
+    new Teams(holder, data);
