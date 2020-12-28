@@ -3,7 +3,8 @@ class Form {
         this.holder = holder;
         this.data = data;
         this.formEl = this.start();
-        this.getTeams = new CustomEvent("getTeams"); 
+        this.getTeamsStart = new CustomEvent("getTeamsStart");
+        this.getTeamsEnd = new CustomEvent("getTeamsEnd"); 
         this.setUpEvents();
     }
 
@@ -33,11 +34,12 @@ class Form {
     getData = (e) => {
         e.preventDefault();
         const val = this.formEl.querySelector('#searchString').value;
+        dispatchEvent(this.getTeamsStart)
         fetch('https://www.thesportsdb.com/api/v1/json/1/searchteams.php?t=' + val)
         .then(resp => resp.json())
         .then((data) => {
             this.data.teams = data.teams;
-            dispatchEvent(this.getTeams)
+            dispatchEvent(this.getTeamsEnd)
         })
         .catch(console.log)
     }

@@ -74,4 +74,13 @@ body {
     background-color: rgb(100, 240, 8);
    
   }
+
+  .loading {
+    color: rgba(157, 255, 0, 0.972);
+    font-size: 25px;
+  }
+
+  .loading.hidden {
+    display: none;
+  }
 }
