@@ -16,4 +16,4 @@ class Header {
 }
 
 export default (holder, appName, description) =>
-    new Header(holder, appName, description) ;
+    new Header(holder, appName, description);
