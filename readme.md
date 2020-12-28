@@ -16,4 +16,4 @@ Run this command to install dependencies and dev-dependencies
 npm install
 ```
 
-nick-fed2-footballApp.surge.sh
+surge build nick-fed2-sportApp.surge.sh

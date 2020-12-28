@@ -8,7 +8,7 @@ const data = {
     teamDetail : {}
 };
 
-header(document.body, "Football App", " | The place to look up your favourite team ");
+header(document.body, "Sports App", " | The place to look up your favourite team ");
 form(document.body, data);
 const teamsdata = teams(document.querySelector("form"), data)
 window.addEventListener('getTeams', teamsdata.renderTeams);

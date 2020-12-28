@@ -2,25 +2,22 @@
 @import "variables";
 
 body {
-    background-image: url("https://footballwhispers.com/wp-content/uploads/2020/09/the-ball-488718_640.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("https://footballwhispers.com/wp-content/uploads/2020/09/the-ball-488718_640.jpg");
+  background-size: cover;
+  background-position: center;
 
   img {
     width: 200px;
     height: 15vh;
   }
-  
 
-  
-
-  header, footer{
+  header,
+  footer {
     height: 15vh;
     background-color: rgb(5, 36, 7);
     display: flex;
     justify-content: center;
     align-items: center;
-    
   }
 
   h1 {
@@ -31,15 +28,14 @@ body {
     &:hover {
       color: $red;
     }
- 
   }
-  
+
   p {
-    color : white;
+    color: white;
     font-size: 20px;
   }
 
-  form{
+  form {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -51,10 +47,10 @@ body {
     }
   }
 
-    input {
-      height: 40px;
-      width: 250px;
-    }
+  input {
+    height: 40px;
+    width: 250px;
+  }
 
   .teamHolder {
     display: flex;
@@ -63,18 +59,19 @@ body {
     .team {
       width: 200px;
       margin-bottom: 20px;
-        
-      }
-    }
-
-    #submitBtn {
-      color: white;
-      background-color: rgb(7, 70, 10);
-      font-size: 20px;
-      border-style: none;
     }
   }
 
-
-
-
+  #submitBtn {
+    color: white;
+    background-color: rgb(7, 70, 10);
+    font-size: 20px;
+    border-style: none;
+    height: 40px;
+    width: 250px;  
+  }
+  #submitBtn:hover {
+    background-color: rgb(100, 240, 8);
+   
+  }
+}

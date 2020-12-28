@@ -9,7 +9,7 @@
     "build": "parcel build index.html --out-dir build",
     "build-clean": "rm -rf ./build && parcel build index.html --out-dir build",
     "test-build": "live-server ./build",
-    "deploy": "surge build nick-fed2-footballApp.surge.sh"
+    "deploy": "surge build nick-fed2-sportApp.surge.sh"
   },
   "keywords": [],
   "author": "",
