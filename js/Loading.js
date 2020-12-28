@@ -1,7 +1,6 @@
 class Loading {
-    constructor(holder, data){
+    constructor(holder){
         this.holder = holder;
-        this.data = data;
         this.loaderRef = this.start();
     }
 
@@ -23,5 +22,5 @@ class Loading {
     }
 }
 
-export default (holder, data) => 
-    new Loading(holder, data);
+export default (holder) => 
+    new Loading(holder);

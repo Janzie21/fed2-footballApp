@@ -14,7 +14,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "dependencies": {},
+  "dependencies": {
+    "jpopup": "^2.0.0"
+  },
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "live-server": "^1.2.1",

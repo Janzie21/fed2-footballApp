@@ -6,11 +6,6 @@ body {
   background-size: cover;
   background-position: center;
 
-  img {
-    width: 200px;
-    height: 15vh;
-  }
-
   header,
   footer {
     height: 15vh;
@@ -59,6 +54,17 @@ body {
     .team {
       width: 200px;
       margin-bottom: 20px;
+      padding-left: 50px;
+
+      img {
+      width: 100%;
+      height: auto;
+      display: block;
+      pointer-events: none;
+    }
+      p {
+      pointer-events: none;
+    }
     }
   }
 
